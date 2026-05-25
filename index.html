@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>任务清单</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" /></noscript>
+  <link rel="stylesheet" href="src/styles/main.css" />
+</head>
+<body>
+  <div id="app">
+    <div class="app-loading">
+      <div class="loading-spinner"></div>
+      <span>加载中...</span>
+    </div>
+  </div>
+
+  <script src="vue.global.prod.js"></script>
+
+  <script src="src/utils/storage.js"></script>
+  <script src="src/utils/id.js"></script>
+  <script src="src/utils/date.js"></script>
+
+  <script src="src/stores/categoryStore.js"></script>
+  <script src="src/stores/taskStore.js"></script>
+  <script src="src/stores/tagStore.js"></script>
+
+  <script src="src/components/StatsCards.js"></script>
+  <script src="src/components/FilterBar.js"></script>
+  <script src="src/components/TaskCard.js"></script>
+  <script src="src/components/TaskList.js"></script>
+  <script src="src/components/KanbanColumn.js"></script>
+  <script src="src/components/KanbanBoard.js"></script>
+  <script src="src/components/TaskFormModal.js"></script>
+  <script src="src/components/CategoryModal.js"></script>
+  <script src="src/components/TagModal.js"></script>
+  <script src="src/components/RecurringPanel.js"></script>
+  <script src="src/components/ChartsView.js"></script>
+  <script src="src/components/TopBar.js"></script>
+
+  <script src="src/App.js"></script>
+  <script src="src/main.js"></script>
+</body>
+</html>
